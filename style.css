@@ -1,0 +1,95 @@
+.body-class{
+    background-color: #d2d0bc;
+}
+
+.header-class{
+    background-color: #bcd2d0;
+    color: #7c7c7c;
+    padding: 10px;
+}
+
+.nav-class{
+    background-color: #ffffff;
+    color: pink;
+    max-width: 230px;
+    padding: 15px;
+    
+}
+.nav-link-class{
+    text-decoration: none;
+    color: #7c7c7c;
+}
+.nav-link-class.active {
+    font-weight: bold; /* Makes the active link bold */
+    
+  }
+
+.title-class{
+    color: #5d576b;
+}
+
+.section-title-class{
+    color: #3e1e96f4;
+}
+
+.text-class{
+    color: gray;
+}
+
+.image-class{
+    border-color: #5d576b;
+    border-style: outset;
+    border-width: 15px;
+    max-width: 100%;
+}
+
+.form-class{
+    
+    background-color: #bcd2d0;
+    padding: 10px; 
+    border-radius: 5px; /* Rounded corners */
+    max-width: 400px; /* Optional: Limit width */
+    /*margin: 20px auto; /* Center the form */
+}
+
+.button-class{
+    background-color: #ffffff; 
+    color: black; 
+    padding: 5px; 
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 10px; 
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 5px;
+}
+.button-class:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+.footer-class{
+    background-color: black;
+    color: white;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .header-class {
+      padding: 10px;
+    }
+  
+    .nav-link-class {
+      display: block; /* Stack the links */
+      margin: 5px 0;
+    }
+  
+    .section-title-class {
+      text-align: center; /* Center text for smaller screens */
+    }
+  
+    .image-class {
+      width: 100%; /* Make image responsive */
+      height: auto;
+    }
+  
+    
+  }
+  
