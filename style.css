@@ -1,0 +1,739 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text for readability */
+}
+
+/* Reset default styles for the list */
+ul#navbar {
+    list-style: none;        /* Remove default list styling */
+    padding: 0;              /* Remove default padding */
+    margin: 0;               /* Remove default margin */
+    background-color: #333;  /* Set background color of the navbar */
+    text-align: right;       /* Align the navbar items to the right */
+    height: 40px;            /* Make the navbar skinnier by setting a fixed height */
+}
+
+/* Style the list items to be inline (horizontal) */
+ul#navbar li {
+    display: inline;         /* Make list items display horizontally */
+    margin-left: 20px;       /* Add space between the list items */
+}
+
+/* Style the links inside the navbar */
+ul#navbar li a {
+    color: white;            /* White text color */
+    text-decoration: none;   /* Remove the underline from links */
+    font-size: 16px;         /* Font size for the links */
+    padding: 10px 15px;      /* Add padding around the link text */
+    display: inline-block;   /* Make links block-level elements for better padding behavior */
+    border-radius: 5px;      /* Round the corners of the links */
+    transition: background-color 0.3s ease; /* Smooth background transition on hover */
+}
+
+/* Change the link's background color when hovered */
+ul#navbar li a:hover {
+    background-color: #555;  /* Darker background color on hover */
+}
+
+
+
+/* Home Page */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack the content sections vertically */
+    padding: 20px;
+    gap: 20px; /* Space between items */
+    min-height: 100vh; /* Ensures it takes full height of the viewport */
+  }
+  
+  /* Content section where all text blocks are placed */
+  .content {
+    display: flex; /* Flex container for horizontal layout */
+    flex-direction: row; /* Items will be arranged in a row */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Creates space between the blocks */
+    width: 50%;
+  }
+  .left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+#welcome {
+    font-size: 45px;               
+    color: #fff;                   /* White text color */
+    background: linear-gradient(#007BFF, #4CAF50);     /* Gradient background */
+    padding: 15px 25px;            /* Reduced padding around the text */
+    border-radius: 10px;           /* Rounded corners */
+    text-align: center;              /* Center the text */
+    width: 250px;                  /* Set a fixed width for the box */
+    margin: 20px 10px;                /* Vertical margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow around the box */
+    flex: 0 0 auto;
+}
+
+.elegant-quote {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 10px;
+    margin: 20px 0px;
+    max-width: 98%; /* Adjust the width to your preference */
+    background-color: #f9f9f9;
+    color: #333;
+    position: relative;
+    border-left: 5px solid #3498db; /* Blue vertical line for emphasis */
+    font-family: 'Georgia', serif;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 0 0 auto;
+  }
+  
+  .elegant-quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #3498db; /* Matching color to the border */
+    border-radius: 4px;
+  }
+  
+  .elegant-quote::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 4px;
+    background-color: #3498db; /* Matching color to the border */
+    border-radius: 4px;
+  }
+  
+
+/* About HelpHub Section Styling */
+#home-about{
+    width: 550px; /* Fixed width for the third text */
+    height: 300px;
+    background-color: #fff;
+    padding: 50px;
+    font-size: 1rem;
+    font-style: normal;
+    border-radius: 8px;
+    flex: 0 0 auto; /* Prevent this element from growing or shrinking */
+
+    margin-left: 120px;
+    margin-top: 90px;
+}
+
+
+
+/* Heading Styling */
+#home-about h2 {
+    font-size: 32px;                      /* Large heading font */
+    color: #333;                          /* Dark text for the heading */
+    font-weight: bold;                    /* Bold heading */
+    margin-bottom: 20px;                  /* Space below the heading */
+}
+
+/* Paragraph Styling */
+#home-about p {
+    font-size: 18px;                      /* Comfortable font size for readability */
+    color: #555;                          /* Slightly lighter text color */
+    margin-top: 10px;                     /* Space between the heading and paragraph */
+    line-height: 1.8;                     /* Better line spacing for readability */
+}
+
+/* Read More Link Styling */
+#home-about a {
+    display: inline-block;                /* Make the link behave like a button */
+    margin-top: 15px;                     /* Space above the link */
+    text-decoration: none;                /* Remove underline */
+    color: #4CAF50;                       /* Green text color for the link */
+    font-size: 18px;                      /* Font size for the link */
+    font-weight: bold;                    /* Bold text for emphasis */
+    padding: 10px 20px;                   /* Padding around the link */
+    border: 2px solid #4CAF50;            /* Border to make the link look like a button */
+    border-radius: 8px;                   /* Rounded corners for the link */
+    transition: all 0.3s ease;            /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the link */
+#home-about a:hover {
+    background-color: #4CAF50;           /* Green background on hover */
+    color: #fff;                          /* White text on hover */
+    transform: scale(1.05);               /* Slight zoom effect */
+}
+
+/* Hover effect for the container */
+#home-about:hover {
+    transform: translateY(-5px); /* Slight lift effect when hovering */
+}
+
+/* Optional: Dashed Border Effect (behind the box) */
+#home-about::before {
+    content: "";
+    position: absolute;
+    top: 10px;                          /* Margin for the dashed border */
+    left: 10px;                         /* Margin for the dashed border */
+    right: 10px;                        /* Margin for the dashed border */
+    bottom: 10px;                       /* Margin for the dashed border */
+    border: 1px dashed #4CAF50;         /* Dashed green border */
+    border-radius: 12px;                /* Rounded corners */
+    z-index: -1;                        /* Send the dashed border behind the content */
+}
+#home-about:focus {
+    outline: 2px solid #4CAF50; /* Green outline on focus */
+}
+
+
+
+.titles h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin: 40px 0 20px;
+}
+/* Container for the entire gallery */
+.image-gallery {
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    gap: 180px; /* Add space between the items */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+/* Each individual image item */
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.image-item {
+    background-color: white;
+    border-radius: 8px; /* Rounded corners for each item */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 280px; /* Fixed width for image items */
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.image-item img {
+    width: 100%; /* Make images fill the container */
+    height: auto;
+    border-radius: 8px; /* Match the rounded corners */
+}
+
+/* Links below images */
+.image-item a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.image-item a:hover {
+    color: #007BFF; /* Change link color on hover */
+}
+/* Styling for the right arrow link */
+/* Arrow Link Styles */
+.arrow-link {
+    position: absolute;
+    right: 45px; /* Positioning it 10px from the right */
+    bottom: -60%;    /* Positioning it vertically centered */
+    transform: translateY(-50%); /* Adjusts for perfect centering */
+    font-size: 50px; /* Size of the arrow */
+    color: #007BFF;  /* Color of the arrow (blue) */
+    text-decoration: none;  /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.arrow-link:hover {
+    color: #f0f0f0; /* Change color on hover */
+}
+
+/* About Section */
+.about-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    color: #4CAF50; /* Green color for headings */
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.charity-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* Information Section */
+.information-section {
+    position: absolute;
+    margin-top: 50px;
+    width: 210px;
+    padding: 5px;
+    margin-right: 920px;
+    bottom: -60px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: flex-start; /* Align the content to the left */
+    line-height: 1.3;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+
+}
+
+.information-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-self: center;
+    
+   
+}
+
+.information-section ul {
+    list-style-type: none;
+}
+
+.information-section li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Profile Image Section */
+.profile-image {
+    display: flex;
+    justify-content: center;  /* Center the image horizontally */
+    align-items: center;      /* Center the image vertically */
+    width: 100%;
+    height: 400px; /* Set a height for the container */
+    margin-bottom: 10px;
+    margin-top: 50px;
+   
+}
+
+.charity-image {
+    width: 95%;  /* Make the image 80% of the container's width */
+    max-width: 600px;  /* Limit the maximum width */
+    height: auto;  /* Keep aspect ratio */
+}
+
+/* About Section */
+.charity-about {
+    background-color: #f9f9f9;  /* Light background color for the section */
+    padding: 30px;  /* Space inside the section */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Slight shadow for depth */
+    max-width: 800px;  /* Limit the width to make it more readable */
+    width: 45%;
+    margin: 20px auto;  /* Center it horizontally with some margin above/below */
+}
+
+.charity-about h2 {
+    font-size: 28px;  /* Larger font size for the title */
+    font-weight: bold;  /* Bold font for emphasis */
+    color: #333;  /* Dark text color for contrast */
+    margin-bottom: 15px;  /* Space between title and content */
+}
+
+.charity-about p {
+    font-size: 18px;  /* Set a readable font size for the paragraph */
+    line-height: 1.6;  /* Increase line height for better readability */
+    color: #555;  /* Slightly lighter text color for the body */
+    margin-bottom: 20px;  /* Space below the paragraph */
+}
+
+.charity-about p a {
+    color: #007bff;  /* Blue color for links */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;  /* Bold text for the link */
+}
+
+.charity-about p a:hover {
+    text-decoration: underline;  /* Add underline on hover for visual feedback */
+    color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Volunteer Button */
+#volunteer-now-button {
+    position: absolute;
+    top: 370px;
+    padding: 35px 35px;
+    height: 400px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 350px; /* Positioning it to the right */
+}
+
+#volunteer-now-button:hover {
+    background-color: #0056b3;
+}
+
+/* Volunteer Form Container */
+#volunteer-form-container {
+    position: absolute;
+    top: 230px;
+    margin-left: 350px;
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    
+}
+
+/* Volunteer Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Review Section (Horizontal alignment for paragraphs) */
+.review-section {
+    display: flex;
+    justify-content: space-between; /* Evenly space reviews */
+    align-items: flex-start; /* Align items at the top of the container */
+    margin-top: 70px;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 20px; /* Consistent gap between items */
+}
+
+/* Review Paragraph Styling */
+.review-section p {
+    background-color: #fff8e1; /* Soft light yellow background */
+    color: #555; /* Darker text for good readability */
+    padding: 25px;
+    margin:auto;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Rounded corners */
+    width: 20%; /* Default width for each review */
+    height: 270px;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-size: 20px; /* Standard font size */
+    line-height: 1.5; /* Increase line height for readability */
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Center text vertically */
+    padding-left: 40px; /* Space for the opening quotation mark */
+    padding-right: 5px; /* Space for the closing quotation mark */
+}
+
+/* Odd-child background color for alternation */
+.review-section p:nth-child(odd) {
+    background-color: #e8f5e9; /* Soft green background */
+}
+
+/* Adding Quotation Marks Using Pseudo-elements */
+.review-section p::before,
+.review-section p::after {
+    content: '"'; /* Adds the quotation marks */
+    position: absolute;
+    font-size: 2.5rem; /* Larger font size for the quotes */
+    color: #666; /* Lighter color for the quotes */
+}
+
+/* Left Quotation Mark */
+.review-section p::before {
+    top: 10px; /* Slightly above the text */
+    left: 10px; /* Place it on the left side */
+}
+
+/* Right Quotation Mark */
+.review-section p::after {
+    bottom: 5px; /* Slightly below the text */
+    right: 35px; /* Place it on the right side */
+}
+/* Success Message Styling */
+.success-message {
+    background-color: #28a745; /* Green background for success */
+    color: white; /* White text for contrast */
+    font-size: 18px; /* Font size for readability */
+    font-weight: bold; /* Make text bold for emphasis */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the message */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+    max-width: 600px; /* Set a max width to avoid stretching */
+    width: 80%; /* Ensure it takes up most of the width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+/* Style for the 'View More' link container */
+.view-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style for the link itself */
+.view-more a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #27ae60; /* Consistent with the green color from your design */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+/* Hover effect to match your card hover effect */
+.view-more a:hover {
+    background-color: #2ecc71; /* Slightly lighter green on hover */
+    transform: translateY(-5px);
+}
+
+/* Optional: Add a focus effect for accessibility */
+.view-more a:focus {
+    outline: 2px solid #2ecc71;
+    outline-offset: 4px;
+}
+
+/* Container for all the opportunities */
+#opportunities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual opportunity card */
+.opportunity {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.opportunity:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Opportunity Title */
+.opportunity h2 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Style for the organization name and link */
+.opportunity a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.opportunity a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph styles */
+.opportunity p {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Emphasize labels */
+.opportunity p strong {
+    color: #2c3e50;
+}
+
+/* Activity and location styles */
+.opportunity .activity,
+.opportunity .location {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Footer link to "More Info" */
+.opportunity a.more-info {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #27ae60;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #ecf8e2;
+}
+
+.opportunity a.more-info:hover {
+    background-color: #d4e9c8;
+}
+
+/* Fade-in animation for smooth entrance */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust title size on smaller screens */
+    .titles h1 {
+        font-size: 32px;
+    }
+
+    /* Center the image and adjust the size */
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .charity-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust the layout of the about and information sections */
+    .about-section, .information-section {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /* Smaller font for information section on mobile */
+    .information-section h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-item {
+        width: 90%; /* Allow images to take up most of the screen on small devices */
+    }
+
+    .titles h1 {
+        font-size: 28px; /* Make the title smaller on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    .titles h1 {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+}
+/* Optional: Responsive navbar */
+@media (max-width: 768px) {
+    ul#navbar {
+        text-align: left;      /* Align navbar items to the left on small screens */
+    }
+
+    ul#navbar li {
+        display: block;        /* Stack navbar items vertically on small screens */
+        margin: 10px 0;         /* Add space between items vertically */
+    }
+}
+
+
+

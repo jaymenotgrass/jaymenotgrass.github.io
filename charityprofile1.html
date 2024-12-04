@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HelpHub</title> 
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    
+    
+     <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="find.html">Find Charities</a></li>
+        <link rel="stylesheet" href="style.css">
+    </ul>
+    <div class="titles"><h1>Phoenix Rescue Mission</h1></div>
+
+    <div class="charity-profile">
+      <div class="information-section">
+          <h3>Information:</h3>
+          <ul>
+              <li>Where: 1540 W. Van Buren St. Phoenix, AZ 85007</li>
+              <li>Hours: 8 a.m. - 4 p.m.</li>
+              <li>Contact: (602) 233-3000, prm@phxmission.org</li>
+          </ul>
+      </div>
+      <div class="profile-image">
+          <img src="images/prmission.jpeg" alt="Phoenix Rescue Mission" class="charity-image">
+      </div>
+      <div class="charity-about">
+        <h2>About:</h2>
+          <p>"Our mission is to provide Christ-centered, life-transforming solutions 
+            to people facing hunger, homelessness, addiction and trauma. 
+            That mission proceeds through a wide variety of programs that address 
+            immediate and long-term needs. Taken together, these advance our God-given 
+            vision: Love, hope and transformation to every neighbor in the Valley." 
+            If you would like to read more, visit their page at:<a href="https://phoenixrescuemission.org/about/" target="_self" title="Phoenix Rescue Mission">
+            PRM About</a></p>
+      </div>
+          <!-- Volunteer Form (Initially Hidden) -->
+    <div class="volunteer-section">
+      <button id="volunteer-now-button">Volunteer Now</button>
+
+      <div id="volunteer-form-container">
+        <form id="volunteer-form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" placeholder="25"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@msn.com" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+
+            <label for="message">Why do you want to volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+        
+    </div>
+  </div>
+        
+
+   
+    <!-- Success Message (Initially Hidden) -->
+    <div id="success-message" style="display:none;"></div>
+    <div class="review-section">
+      <p>"I was so blessed when I first came to Phoenix Rescue Mission. I was met
+        by very good, honest people who work with heart. I could feel God's 
+        love here." -Nathalye</p>
+
+      <p>"When I walked through the gates, I felt so relieved. I felt welcomed and 
+        like I mattered." -Pete</p>
+
+      <p>"Phoenix Rescue Mission means everything to me.
+        They've given me all I needed
+        to recover..." -Jennifer</p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="charity_profile.js"></script>
+    
+</body>
+</html>

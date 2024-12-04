@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HelpHub</title> 
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    
+     <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="find.html">Find Charities</a></li>
+        <link rel="stylesheet" href="style.css">
+    </ul>
+    <div class="titles"><h1>Thrive Arizona</h1></div>
+    
+
+    <div class="charity-profile">
+      <div class="information-section">
+          <h3>Information:</h3>
+          <ul>
+            <li>Where: 14202 N 73rd Ave, Peoria, AZ 85381</li>
+            <li>Hours: Monday - Thursday, 9 a.m. - 4:00 p.m.</li>
+            <li>Contact: (602) 503-5566</li>
+          </ul>
+      </div>
+      <div class="profile-image">
+          <img src="images/thriveaz.jpeg" alt="Thrive Arizona" class="charity-image">
+      </div>
+      <div class="charity-about">
+        <h2>About:</h2>
+          <p>"We work towards foster care prevention, reunification, and aged-out. 
+            Working in cooperation with Arizona Department of Child Safety caseworkers 
+            and community social workers, we connect our clients with community partners 
+            to help provide the basic needs required by the Arizona Department of Child 
+            Safety.
+            To assist our families and young adults in overcoming their obstacles and 
+            meeting their goals, Thrive AZ provides the following resources at no charge" 
+            If you would like to read more, visit their page at:<a href="https://www.thriveaz.org/about" target="_self" title="Thrive Arizona">
+                Thrive Arizona About</a></p>
+      </div>
+          <!-- Volunteer Form (Initially Hidden) -->
+    <div class="volunteer-section">
+      <button id="volunteer-now-button">Volunteer Now</button>
+
+      <div id="volunteer-form-container">
+        <form id="volunteer-form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" placeholder="25"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@msn.com" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+
+            <label for="message">Why do you want to volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+        
+    </div>
+  </div>
+        
+
+   
+    <!-- Success Message (Initially Hidden) -->
+    <div id="success-message" style="display:none;"></div>
+    <div class="review-section">
+      <p>"Truly a blessing this company is!" -Kelsey</p>
+
+      <p>"Before I got help from St. Mary's, I was barely surviving. I would go a 
+        long time without eating." -Sidney</p>
+
+      <p>"This organization brings hope to the hopeless. Thankful for Thrive AZ 
+        for always looking for ways to help others." -Stephen</p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="charity_profile.js"></script>
+    
+</body>
+</html>

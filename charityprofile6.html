@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HelpHub</title> 
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    
+    
+     <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="find.html">Find Charities</a></li>
+        <link rel="stylesheet" href="style.css">
+    </ul>
+    <div class="titles"><h1>Keep Phoenix Beautiful</h1></div>
+    <div class="charity-profile">
+      <div class="information-section">
+          <h3>Information:</h3>
+          <ul>
+            <li>Where: 200 West Washington Street, 16th Floor, Phoenix, AZ, 85003</li>
+            <li>Hours: Monday to Friday, 8 a.m. - 4 p.m. </li>
+            <li>Contact: 602-262-4820</li>
+          </ul>
+      </div>
+      <div class="profile-image">
+          <img src="images/keepphoenixbeautiful.jpeg" alt="Keep Phoenix Beautiful" class="charity-image">
+      </div>
+      <div class="charity-about">
+        <h2>About:</h2>
+          <p>"Every day, Keep Phoenix Beautiful provides tools to empower our diverse 
+            communities to improve overall quality of life. Our vision is a vibrant 
+            Phoenix where each neighborhood is a healthy, beautiful place to live. To 
+            achieve that vision, we aim to inspire individuals and organizations through 
+            leadership, active partnerships, and meaningful volunteer experiences." 
+            If you would like to read more, visit their page at:<a href="https://www.keepphxbeautiful.org" target="_self" title="Keep Phoenix Beautiful">
+                Keep Phoenix Beautiful About</a></p>
+      </div>
+          <!-- Volunteer Form (Initially Hidden) -->
+    <div class="volunteer-section">
+      <button id="volunteer-now-button">Volunteer Now</button>
+
+      <div id="volunteer-form-container">
+        <form id="volunteer-form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" placeholder="25"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@msn.com" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+
+            <label for="message">Why do you want to volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+        
+    </div>
+  </div>
+        
+
+   
+    <!-- Success Message (Initially Hidden) -->
+    <div id="success-message" style="display:none;"></div>
+    <div class="review-section">
+      <p>"Phoenix has been kept beautiful because of events that are hosted" -City of Phoenix</p>
+
+      <p>"I love to get the opportunity to give back to the landscape of Phoenix" -Paul</p>
+
+      <p>"I've volunteered for years and it continues to leave me in absolute appreciation" -Jill</p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="charity_profile.js"></script>
+    
+</body>
+</html>

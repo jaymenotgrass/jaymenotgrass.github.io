@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #opportunities-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Individual opportunity card */
+        .opportunity {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .opportunity:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Opportunity Title */
+        .opportunity h2 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        /* Style for the organization name and link */
+        .opportunity a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .opportunity a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Paragraph styles */
+        .opportunity p {
+            font-size: 1em;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        /* Emphasize labels */
+        .opportunity p strong {
+            color: #2c3e50;
+        }
+        
+        /* Activity and location styles */
+        .opportunity .activity,
+        .opportunity .location {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer link to "More Info" */
+        .opportunity a.more-info {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 500;
+            color: #27ae60;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: #ecf8e2;
+        }
+        
+        .opportunity a.more-info:hover {
+            background-color: #d4e9c8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Volunteer Opportunities</h1>
+    <a href="find.html">Go Back...</a>
+    <!-- This is where the volunteer opportunities will be displayed -->
+    <div id="opportunities-container">
+        <!-- Opportunities will be dynamically inserted here -->
+    </div>
+
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+
+</body>
+</html>

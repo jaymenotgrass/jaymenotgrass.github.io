@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HelpHub</title> 
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    
+    
+     <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="find.html">Find Charities</a></li>
+        <link rel="stylesheet" href="style.css">
+    </ul>
+    <div class="titles"><h1>Savior Hospice & Palliative Care</h1></div>
+    <div class="charity-profile">
+      <div class="information-section">
+          <h3>Information:</h3>
+          <ul>
+            <li>Where: 4530 E Shea Boulevard Suite 160, Phoenix, AZ 85028-6042</li>
+            <li>Hours: Monday - Friday, 9 a.m. - 5 p.m.</li>
+            <li>Contact: Tel (480) 257-7656</li>
+          </ul>
+      </div>
+      <div class="profile-image">
+          <img src="images/savior.jpeg" alt="Savior Hospice & Palliative Care" class="charity-image">
+      </div>
+      <div class="charity-about">
+        <h2>About:</h2>
+          <p>"Savior Hospice & Palliative Care is locally and family owned. Our goal is 
+            to "Make Every Moment Matter," which has been at the heart of our business 
+            and family values for over 6 years.
+    
+            Facing end of life challenges can sometimes be very daunting, which is why 
+            our passion to walk alongside our patients and their families is at the very 
+            heart of what we do. Also, because we are all different, we will craft an 
+            individual plan of care that meets all your needs. We bring innovative and 
+            creative solutions that we have gained over our many years of experience, 
+            which helps us provide dignified and compassionate care that is second to 
+            none." If you would like to read more, visit their page at:<a href="https://www.saviorhospice.org/about-us/" target="_self" title="Savior Hospice">
+                Savior Hospice Aboutuld like to read more, visit their page at:<a href="https://phoenixrescuemission.org/about/" target="_self" title="Phoenix Rescue Mission">
+            PRM About</a></p>
+      </div>
+          <!-- Volunteer Form (Initially Hidden) -->
+    <div class="volunteer-section">
+      <button id="volunteer-now-button">Volunteer Now</button>
+
+      <div id="volunteer-form-container">
+        <form id="volunteer-form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" placeholder="25"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@msn.com" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+
+            <label for="message">Why do you want to volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+        
+    </div>
+  </div>
+        
+
+   
+    <!-- Success Message (Initially Hidden) -->
+    <div id="success-message" style="display:none;"></div>
+    <div class="review-section">
+      <p>"My heart was heavy knowing that my husband was now going into Hospice!  
+        I dreaded the day...but this amazing team from SAVIOR HOSPICE was my light 
+        in this never ending, dark tunnel." -Lenore</p>
+
+      <p>"The team at Savior hospice really were saviors for me and my mom at the end 
+        of her road." -Joe</p>
+
+      <p>"...they were compassionate, caring, helpful and on top of everything both my 
+        mother and our family needed to make her last weeks as comfortable as 
+        possible." -Joyce</p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="charity_profile.js"></script>
+    
+</body>
+</html>

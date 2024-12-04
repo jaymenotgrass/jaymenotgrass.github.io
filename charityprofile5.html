@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HelpHub</title> 
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    
+    
+     <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="find.html">Find Charities</a></li>
+        <link rel="stylesheet" href="style.css">
+    </ul>
+    <div class="titles"><h1>Stable Influence</h1></div>
+    <div class="charity-profile">
+      <div class="information-section">
+          <h3>Information:</h3>
+          <ul>
+            <li>Where: Peoria, New River</li>
+            <li>Hours: 
+                <ul>
+                    <li>Peoria(Wednesday 2 p.m to 5:30 p.m. - September to May)</li>
+                    <li>New River(Saturday 10 a.m to 12 p.m. - September to May)</li>
+                    <li>New River(Tuesday and Wednesday 5 p.m to 7 p.m. - June to August)</li>
+                </ul>  
+            </li>
+      </div>
+      
+          <li>Contact: 623-465-0637</li>
+          </ul>
+      </div>
+      <div class="profile-image">
+          <img src="images/stable.webp" alt="Phoenix Rescue Mission" class="charity-image">
+      </div>
+      <div class="charity-about">
+        <h2>About:</h2>
+          <p>"For millennia, people the world over have had a working and love 
+            relationship with horses; and though horses are no longer needed in the 
+            service of man, the love for these beautiful creatures remains.  
+            The recreation and sports associated with horseback riding are not only 
+            enjoyable, but have been proven to be therapeutic.   Individuals with 
+            disabilities are challenged by the activity, and are not only rewarded by it, 
+            but realize it as a road to recovery.   For them it's a chance for building 
+            self-confidence, promoting independence, and providing a sense of normalcy
+             not otherwise available.Whether it's a 7-year-old with Cerebral Palsy, or a 
+             75-year-old victim of stroke, their many stories and successes will touch 
+             you.   This program improves lives.   This program works! " If you would 
+             like to read more, visit their page at:<a href="https://stableinfluence.org" target="_self" title="Stable Influence">
+                Stable Influence About</a></p>
+      </div>
+          <!-- Volunteer Form (Initially Hidden) -->
+    <div class="volunteer-section">
+      <button id="volunteer-now-button">Volunteer Now</button>
+
+      <div id="volunteer-form-container">
+        <form id="volunteer-form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" placeholder="25"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="johndoe@msn.com" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+
+            <label for="message">Why do you want to volunteer?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+        
+    </div>
+  </div>
+        
+
+   
+    <!-- Success Message (Initially Hidden) -->
+    <div id="success-message" style="display:none;"></div>
+    <div class="review-section">
+      <p>"Amazing charity, beautiful in every way. Will be always grateful for their 
+        impact on challenged lives. " -Dick</p>
+
+      <p>"Will continue to share this with everybody who could benefit!" -Margaret</p>
+
+      <p>"The Stable is a beautiful and unique organization that takes therapy to a different level." -Jenny</p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="charity_profile.js"></script>
+    
+</body>
+</html>
